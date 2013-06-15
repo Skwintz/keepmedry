@@ -6,3 +6,6 @@
 autopublish
 insecure
 preserve-inputs
+email
+jquery
+backbone
