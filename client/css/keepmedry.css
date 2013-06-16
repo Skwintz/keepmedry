@@ -374,7 +374,7 @@ form .arrow {
 	clear: both;
 	height: 1px;
 }
-#framefour p.success, #framefour p.wait {
+#framefour p.success, #framefour p.wait, #framefour p.error {
 	color: #f3a735; 
 	font-size: 54px;
 	padding: 30px 0;

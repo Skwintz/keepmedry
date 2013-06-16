@@ -50,10 +50,18 @@ Template.main.doPosition = function ( position ) {
 Template.main.events = {
 	'submit .form': function ( e ) {
 
-		$('#framefour p.wait').show();
-
 		e.preventDefault();
-		navigator.geolocation.getCurrentPosition( Template.main.doPosition );
+
+		if ( navigator.geolocation ) {
+			$('#framefour p.wait').show();
+
+			navigator.geolocation.getCurrentPosition( Template.main.doPosition );
+		} else {
+
+			$('#framefour p.error').show();
+
+		}
+		
 
 	}
 }

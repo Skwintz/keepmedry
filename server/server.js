@@ -172,7 +172,7 @@ Meteor.methods({
 			to: user.number + carriers[ user.carrier ],
 			from: 'daily@keepmedry.org',
 			subject: 'Keep Me Dry',
-			text: 'Thanks for signing up! You\'ll be receiving you\'re first forecast text soon.'
+			text: 'Thanks for signing up! You\'ll be receiving your first forecast text soon.'
 		});
 
 		// name, time, latitude, longitude
