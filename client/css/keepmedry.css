@@ -35,19 +35,19 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f3a736', end
 }
 #primary li a {
 	display: block;
-	background: url(../images/arrows.png) no-repeat bottom left;
+	background: url(/images/arrows.png) no-repeat bottom left;
 	text-indent: -9999em;
 	height: 20px;
 	width: 28px;
 }
 #primary li a:hover, #primary li a.active {
-	background: url(../images/arrows.png) no-repeat top left;
+	background: url(/images/arrows.png) no-repeat top left;
 }
 #primary li a.framethree {
-	background: url(../images/heart.png) no-repeat bottom left;
+	background: url(/images/heart.png) no-repeat bottom left;
 }
 #primary li a.framethree.active {
-	background: url(../images/heart.png) no-repeat top left;
+	background: url(/images/heart.png) no-repeat top left;
 }
 #girl {
 	position: fixed;
@@ -56,16 +56,16 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f3a736', end
 	margin-left: -387.5px;
 	left: 50%;
 	z-index: 995;
-	background: url(../images/girl-sunny.png) no-repeat top left;
+	background: url(/images/girl-sunny.png) no-repeat top left;
 	background-size: contain;
 	height: 899px;
 }
 .frametwo #girl {
-	background: url(../images/girl-rainy.png) no-repeat top left;
+	background: url(/images/girl-rainy.png) no-repeat top left;
 	background-size: contain;
 }
 .framethree #girl {
-	background: url(../images/girl-party.png) no-repeat top left;
+	background: url(/images/girl-party.png) no-repeat top left;
 	background-size: contain;
 }
 /* FRAMEONE */
@@ -191,13 +191,13 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f3a736', end
 	left: 0;
 }
 #drops-background {
-	background: url(../images/drops-background.png) no-repeat top left;
+	background: url(/images/drops-background.png) no-repeat top left;
 }
 #drops-middleground {
-	background: url(../images/drops-middleground.png) no-repeat top left;
+	background: url(/images/drops-middleground.png) no-repeat top left;
 }
 #drops-foreground {
-	background: url(../images/drops-foreground.png) no-repeat top left;
+	background: url(/images/drops-foreground.png) no-repeat top left;
 }
 #frametwo .foreground .stormy {
 	z-index: 999;
@@ -240,7 +240,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f3a736', end
 }
 /* FRAME THREE */
 .landscape {
-	background: url(../images/landscape.png)no-repeat left bottom;
+	background: url(/images/landscape.png)no-repeat left bottom;
 	background-size: contain;
 }
 #framethree {
