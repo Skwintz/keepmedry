@@ -3,28 +3,25 @@
 	padding: 0;
 }
 body {
-	min-height: 5000px;
+	font-family: "Gill Sans", "Gill Sans MT", Calibri, arial, sans-serif;
 background: #f3a736; /* Old browsers */
 /* IE9 SVG, needs conditional override of 'filter' to 'none' */
-background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2YzYTczNiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjE2JSIgc3RvcC1jb2xvcj0iI2JmZDFiMyIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjY1JSIgc3RvcC1jb2xvcj0iIzQ2Nzk5NiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNhZGRkZDciIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
-background: -moz-linear-gradient(top,  #f3a736 0%, #bfd1b3 16%, #467996 65%, #adddd7 100%); /* FF3.6+ */
-background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#f3a736), color-stop(16%,#bfd1b3), color-stop(65%,#467996), color-stop(100%,#adddd7)); /* Chrome,Safari4+ */
-background: -webkit-linear-gradient(top,  #f3a736 0%,#bfd1b3 16%,#467996 65%,#adddd7 100%); /* Chrome10+,Safari5.1+ */
-background: -o-linear-gradient(top,  #f3a736 0%,#bfd1b3 16%,#467996 65%,#adddd7 100%); /* Opera 11.10+ */
-background: -ms-linear-gradient(top,  #f3a736 0%,#bfd1b3 16%,#467996 65%,#adddd7 100%); /* IE10+ */
-background: linear-gradient(to bottom,  #f3a736 0%,#bfd1b3 16%,#467996 65%,#adddd7 100%); /* W3C */
+background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2YzYTczNiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjE4JSIgc3RvcC1jb2xvcj0iI2JmZDFiMyIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjI0JSIgc3RvcC1jb2xvcj0iIzQ2Nzk5NiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjU1JSIgc3RvcC1jb2xvcj0iIzQ2Nzk5NiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjY3JSIgc3RvcC1jb2xvcj0iI2FkZGRkNyIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgPC9saW5lYXJHcmFkaWVudD4KICA8cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMSIgaGVpZ2h0PSIxIiBmaWxsPSJ1cmwoI2dyYWQtdWNnZy1nZW5lcmF0ZWQpIiAvPgo8L3N2Zz4=);
+background: -moz-linear-gradient(top,  #f3a736 0%, #bfd1b3 18%, #467996 24%, #467996 55%, #adddd7 67%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#f3a736), color-stop(18%,#bfd1b3), color-stop(24%,#467996), color-stop(55%,#467996), color-stop(67%,#adddd7)); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top,  #f3a736 0%,#bfd1b3 18%,#467996 24%,#467996 55%,#adddd7 67%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top,  #f3a736 0%,#bfd1b3 18%,#467996 24%,#467996 55%,#adddd7 67%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top,  #f3a736 0%,#bfd1b3 18%,#467996 24%,#467996 55%,#adddd7 67%); /* IE10+ */
+background: linear-gradient(to bottom,  #f3a736 0%,#bfd1b3 18%,#467996 24%,#467996 55%,#adddd7 67%); /* W3C */
 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f3a736', endColorstr='#adddd7',GradientType=0 ); /* IE6-8 */
+}
+#frameone, #frametwo, #framethree {
+	min-height: 1700px;
 }
 .page-wrapper {
 	max-width: 1200px;
 	margin: 0 auto;
 	position: relative;
-}
-#frametwo, #framethree, #framefour {
-	height: 500px;
-}
-#frameone {
-	height: 100%;
 }
 /* Navigation styles */
 #primary {
@@ -38,27 +35,38 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f3a736', end
 }
 #primary li a {
 	display: block;
-	background: url(/images/arrows.png) no-repeat bottom left;
+	background: url(../images/arrows.png) no-repeat bottom left;
 	text-indent: -9999em;
 	height: 20px;
 	width: 28px;
 }
 #primary li a:hover, #primary li a.active {
-	background: url(/images/arrows.png) no-repeat top left;
+	background: url(../images/arrows.png) no-repeat top left;
 }
-#primary li a.framefour {
-	background: url(/images/heart.png) no-repeat bottom left;
+#primary li a.framethree {
+	background: url(../images/heart.png) no-repeat bottom left;
 }
-#primary li a.framefour.active {
-	background: url(/images/heart.png) no-repeat top left;
+#primary li a.framethree.active {
+	background: url(../images/heart.png) no-repeat top left;
 }
 #girl {
 	position: fixed;
 	top: 20px;
-	width: 755px;
-	margin-left: -377.5px;
+	width: 775px;
+	margin-left: -387.5px;
 	left: 50%;
 	z-index: 995;
+	background: url(../images/girl-sunny.png) no-repeat top left;
+	background-size: contain;
+	height: 899px;
+}
+.frametwo #girl {
+	background: url(../images/girl-rainy.png) no-repeat top left;
+	background-size: contain;
+}
+.framethree #girl {
+	background: url(../images/girl-party.png) no-repeat top left;
+	background-size: contain;
 }
 /* FRAMEONE */
 #frameone  .background {
@@ -138,7 +146,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f3a736', end
 }
 #bird-2 {
 	position: absolute;
-	top: 550px;
+	top: 590px;
 	left: 27%;
 }
 #bird-3 {
@@ -157,20 +165,119 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f3a736', end
 #frameone-titlebanner2 {
 	z-index: 994;
 }
+#frameone .foreground p {
+	color: #285571;
+	position: absolute;
+	top: 480px;
+	font-size: 39px;
+	left: 18%;
+	z-index: 999;
+	opacity: 1;
+}
+
+/* FRAMETWO */
+#frametwo {
+	position: relative;
+}
+#frametwo .stormy {
+	position: absolute;
+}
+.drops {
+	position: absolute;
+	text-indent: -9999em;
+	min-height: 614px;
+	width: 100%;
+	top: 160px;
+	left: 0;
+}
+#drops-background {
+	background: url(../images/drops-background.png) no-repeat top left;
+}
+#drops-middleground {
+	background: url(../images/drops-middleground.png) no-repeat top left;
+}
+#drops-foreground {
+	background: url(../images/drops-foreground.png) no-repeat top left;
+}
+#frametwo .foreground .stormy {
+	z-index: 999;
+}
+#frametwo .background .stormy {
+	right: 0;
+	top: 70px;
+}
+#stormy-1 {
+	top: 160px;
+}
+#stormy-2 {
+	top: 384px;
+	right: 22%;
+}
+#stormy-3 {
+	top: 500px;
+	left: 27%;
+}
+#stormy-4 {
+	top: 800px;
+	right: 0;
+}
+#frametwo-titlebanner {
+	width: 781px;
+	position: absolute;
+	margin-left: -390.5px;
+	left: 50%;
+	z-index: 999;
+	top: 50px;
+}
+#frametwo .foreground p {
+	position: absolute;
+	color: #f0f6e5;
+	font-size: 34px;
+	width: 300px;
+	top: 540px;
+	left: 21%;
+	z-index: 999;
+}
+/* FRAME THREE */
+.landscape {
+	background: url(../images/landscape.png)no-repeat left bottom;
+	background-size: contain;
+}
+#framethree {
+	min-height: 1320px;
+}
 @media screen and (max-width: 1040px) {
 	#plane {
 		left: 79%;
 	}
-	#bird-3, #bird-1, #balloon-2 {
+	#bird-3, #bird-1, #balloon-2, #stormy-3, #stormy-4 {
 		display:none;
 	}
 	#girl {
 		width: 600px;
 		margin-left: -300px;
+		height: 696px;
 	}
 	#frameone-titlebanner1, #frameone-titlebanner2 {
 		width: 750px;
 		margin-left: -375px;
+	}
+	#frameone .foreground p { 
+		font-size: 29px;
+		top: 360px;
+		left: 21%;
+	}
+}
+@media screen and (max-width: 930px) {
+	#frametwo .foreground p {
+		left: 11%;
+	}
+	#stormy-2 {
+		top: 354px;
+		right: 50px;
+	}
+	#stormy-5 {
+		display: none;
 	}
 }
 @media screen and (max-width: 850px) {
@@ -183,19 +290,33 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f3a736', end
 	#plane {
 		top: 80px;
 	}
+	#frametwo-titlebanner {
+		width: 580px;
+		margin-left: -290px;
+	}
 }
 @media screen and (max-width: 775px) {
 	#girl {
 		width: 400px;
 		margin-left: -200px;
+		height: 464px;
 	}
 	#frameone-titlebanner1, #frameone-titlebanner2 {
 		width: 450px;
 		margin-left: -225px;
 		top: 70px;
 	}
-	#balloon-1, #plane, #cloud-5 {
+	#balloon-1, #plane, #cloud-5, #stormy-1, #stormy-2 {
 		display: none;
+	}
+	#frameone .foreground p { 
+		font-size: 19px;
+		top: 257px;
+		left: 23%;
+	}
+	#frametwo .foreground p {
+		margin-left: -150px;
+		left: 50%;
 	}
 }
 @media screen and (max-width: 525px) {

@@ -44,6 +44,8 @@ $(document).ready(function() {
     
 });
 
+
+
 /* Scroll the background layers */
 function parallaxScroll(){
 	var scrolled = $(window).scrollTop();
@@ -55,7 +57,7 @@ function parallaxScroll(){
 	$('#cloud-6').css('top',(450-(scrolled*.7))+'px');
 	$('#balloon-1').css('top',(630-(scrolled*.25))+'px');
 	$('#bird-1').css('top',(450-(scrolled*.85))+'px');
-	$('#bird-2').css('top',(550-(scrolled*.9))+'px');
+	$('#bird-2').css('top',(590-(scrolled*.9))+'px');
 	$('#bird-3').css('top',(340-(scrolled*.7))+'px');
 }
 
@@ -76,5 +78,17 @@ function redrawDotNav(){
 	} else if ($(document).scrollTop() >= section4Top){
 		$('nav#primary a.framefour').addClass('active');
 	}
+	if($(document).scrollTop() >= section1Top && $(document).scrollTop() < section2Top){
+		$('body').removeClass('frametwo');
+		$('body').addClass('frameone');
+	} else if ($(document).scrollTop() >= section2Top && $(document).scrollTop() < section3Top){
+		$('body').removeClass('frameone');
+		$('body').removeClass('framethree');
+		$('body').addClass('frametwo');
+	} else if ($(document).scrollTop() >= section3Top && $(document).scrollTop() < section4Top){
+		$('body').removeClass('frametwo');
+		$('body').addClass('framethree');
+	} 
 	
 }
+
