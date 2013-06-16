@@ -11,37 +11,6 @@
 </body>
 
 <template name="main">
-
-	<!-- <form>
-	  <label>
-	  	<span>Phone Number</span>
-	  	<input type="tel"name="number">
-	  </label>
-	   <label>
-	  	<span>Carrier</span>
-	  	<select>
-		  <option value="verizon">Verizon Wireless</option>
-		  <option value="att">AT&T</option>
-		  <option value="sprint">Sprint</option>
-		  <option value="tmobile">T-Mobile USA</option>
-		  <option value="boost">Boost Mobile</option>
-		  <option value="clearwire">Clearwire</option>
-		  <option value="metropcs">MetroPCS</option>
-		  <option value="uscellular">US Cellular</option>
-		  <option value="cellularsouth">Cellular South</option>
-		  <option value="ntelos">Ntelos</option>
-		</select>
-	  </label>
-	  <label>
-	  	<span>Zip</span>
-	  	<input type="text" name="zip">
-	  </label>
-	  <label>
-	  	<span>Time to contact</span>
-	  	<input type="time" name="contacttime">
-	  </label>
-	  <button>Sign up</button>
-  </form> -->
   
   <div class="landscape">
 	<div class="page-wrapper">
@@ -56,13 +25,16 @@
 					<li>
 						<a class="framethree" href="#framethree">View</a>
 					</li>
+					<li>
+						<a class="framefour" href="#framefour">View</a>
+					</li>
 				</ul>
 			</nav>
 			<div id="girl">
 			</div>
 		<div id="frameone">
 			<div class="background">
-				<img class="sun" id="sun" src="/images/sun.png" />
+				<img class="sun" id="sun" src="../images/sun.png" />
 				<img class="cloud" id="cloud-1" src="../images/cloud-1.png" />
 				<img class="cloud" id="cloud-2" src="../images/cloud-2.png" />
 				<img class="cloud" id="cloud-4" src="../images/cloud-4.png" />
@@ -87,7 +59,7 @@
 		<div id="frametwo">
 			<div class="background">
 				<div class="drops" id="drops-background">drops</div>
-				<img class="stormy" id="stormy-5" src="/images/stormy-5.png" />
+				<img class="stormy" id="stormy-5" src="../images/stormy-5.png" />
 			</div>
 			<div class="middleground">
 				<div class="drops" id="drops-middleground">drops</div>
@@ -105,16 +77,67 @@
 		<div id="framethree">
 			<div class="background">
 				<img id="stars" src="../images/stars.png" />
+				<img id="partyballoons-3" src="../images/partyballoons-3.png" />
 			</div>
 			<div class="middleground">
+				<img id="fireworks-2" src="../images/fireworks-2.png" />
+				<img id="gifts" src="../images/gifts.png" />
+				<img id="partyballoons-2" src="../images/partyballoons-2.png" />
 			</div>
 			<div class="foreground">
 				<img id="confetti" src="../images/confetti.png" />
+				<img id="fireworks-1" src="../images/fireworks-1.png" />
+				<img id="partyballoons-1" src="../images/partyballoons-1.png" />
+				<img id="hats" src="../images/hats.png" />
+				<img class="framethree-titlebanner" id="framethree-titlebanner" src="../images/framethree-titlebanner.png" />
 			</div>
 		</div>
 	</div>
+  </div>
 	<div id="framefour">
-	</div>	
-  </div>	
+		<div class="content">
+			<img id="framefourtitle" src="../images/framefour-title.png" />
+			<p>reminds you of the things you forget. Whether you work the day or night shift, you'll receive a text when it’s convenient for you.</p>
 
+<p>We'll let you know when the weather calls for an umbrella, your rain jacket, snow boats, leaving early for work (it can get slick out there!), wearing sunblock (107 degrees, seriously?), and when long sleeves just won't cut it.</p>
+
+<p>We know, we sound like your mom, but I promise you'll thank us. So, what are you waiting for? You never know, it could be raining.</p>
+			<div class="form">
+			<form>
+				  <label>
+				  	<span>Phone Number</span>
+				  	<input type="tel"name="number" placeholder="(###) ### ####">
+				  </label>
+				   <label class="even">
+				  	<span>Carrier</span>
+				  	<select>
+					  <option value="verizon">Verizon Wireless</option>
+					  <option value="att">AT&T</option>
+					  <option value="sprint">Sprint</option>
+					  <option value="tmobile">T-Mobile USA</option>
+					  <option value="boost">Boost Mobile</option>
+					  <option value="clearwire">Clearwire</option>
+					  <option value="metropcs">MetroPCS</option>
+					  <option value="uscellular">US Cellular</option>
+					  <option value="cellularsouth">Cellular South</option>
+					  <option value="ntelos">Ntelos</option>
+					</select>
+				  </label>
+				  <label>
+				  	<span>Zip</span>
+				  	<input type="text" name="zip" placeholder="#####">
+				  </label>
+				  <label class="even">
+				  	<span>Time to contact</span>
+				  	<input type="time" name="contacttime">
+				  </label>
+				  <img class="arrow" src="../images/arrow.png" />
+				  <button>Yayyyyy! Let’s do this!</button>
+			  </form>
+			  <p class="success">You're on your way to being better prepared!</p>
+			</div>
+			  <p class="privacy">* Standard text messaging rates apply.</p>
+			  <div class="clear"> </div>
+		</div>
+	</div>	
 </template>
