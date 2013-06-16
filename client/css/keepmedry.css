@@ -1,1 +1,212 @@
-/* CSS declarations go here */
+* {
+	margin: 0;
+	padding: 0;
+}
+body {
+	min-height: 5000px;
+background: #f3a736; /* Old browsers */
+/* IE9 SVG, needs conditional override of 'filter' to 'none' */
+background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2YzYTczNiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjE2JSIgc3RvcC1jb2xvcj0iI2JmZDFiMyIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjY1JSIgc3RvcC1jb2xvcj0iIzQ2Nzk5NiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNhZGRkZDciIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+background: -moz-linear-gradient(top,  #f3a736 0%, #bfd1b3 16%, #467996 65%, #adddd7 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#f3a736), color-stop(16%,#bfd1b3), color-stop(65%,#467996), color-stop(100%,#adddd7)); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top,  #f3a736 0%,#bfd1b3 16%,#467996 65%,#adddd7 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top,  #f3a736 0%,#bfd1b3 16%,#467996 65%,#adddd7 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top,  #f3a736 0%,#bfd1b3 16%,#467996 65%,#adddd7 100%); /* IE10+ */
+background: linear-gradient(to bottom,  #f3a736 0%,#bfd1b3 16%,#467996 65%,#adddd7 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f3a736', endColorstr='#adddd7',GradientType=0 ); /* IE6-8 */
+}
+.page-wrapper {
+	max-width: 1200px;
+	margin: 0 auto;
+	position: relative;
+}
+#frametwo, #framethree, #framefour {
+	height: 500px;
+}
+#frameone {
+	height: 100%;
+}
+/* Navigation styles */
+#primary {
+	position: fixed;
+	top: 20px;
+	left: 50px;
+}
+#primary li {
+	list-style-type: none;
+	margin-bottom: 12px;
+}
+#primary li a {
+	display: block;
+	background: url(../images/arrows.png) no-repeat bottom left;
+	text-indent: -9999em;
+	height: 20px;
+	width: 28px;
+}
+#primary li a:hover, #primary li a.active {
+	background: url(../images/arrows.png) no-repeat top left;
+}
+#primary li a.framefour {
+	background: url(../images/heart.png) no-repeat bottom left;
+}
+#primary li a.framefour.active {
+	background: url(../images/heart.png) no-repeat top left;
+}
+#girl {
+	position: fixed;
+	top: 20px;
+	width: 755px;
+	margin-left: -377.5px;
+	left: 50%;
+	z-index: 995;
+}
+/* FRAMEONE */
+#frameone  .background {
+	z-index: 3;
+}
+#frameone .middleground {
+	z-index: 6;
+}
+#frameone .foreground {
+	z-index: 12;
+}
+/* Background */
+#sun {
+	position: absolute;
+	top: -68px;
+	left: 30%;
+}
+.cloud {
+	position: absolute;
+}
+#cloud-1 {
+	width: 142px;
+	margin-left: -71px;
+	top: 50px;
+	left: 15%;
+}
+#cloud-2 {
+	width: 205px;
+	margin-left: -102.5px;
+	top: 150px;
+	left: 22%;
+}
+#cloud-3 {
+	width: 254px;
+	margin-left: -127px;
+	top: 590px;
+	left: 15%;
+}
+#cloud-4 {
+	width: 304px;
+	margin-left: -152px;
+	top: 50px;
+	right: 0;
+}
+#cloud-5 {
+	width: 202px;
+	margin-left: -101px;
+	top: 500px;
+	left: 60%;
+}
+#cloud-6 {
+	width: 143px;
+	margin-left: -71.5px;
+	top: 450px;
+	left: 36%;
+}
+/* middle ground */
+#plane {
+	position: absolute;
+	top: 30px;
+	left: 67%;
+}
+#balloon-1 {
+	position: absolute;
+	top: 630px;
+	left: 11%;
+}
+#balloon-2 {
+	position: absolute;
+	top: 520px;
+	right: 4%;
+}
+#bird-1 {
+	position: absolute;
+	top: 450px;
+	right: 11%;
+}
+#bird-2 {
+	position: absolute;
+	top: 550px;
+	left: 27%;
+}
+#bird-3 {
+	position: absolute;
+	top: 340px;
+	left: 0%;
+}
+#frameone-titlebanner1, #frameone-titlebanner2  {
+	position: absolute;
+	top: 140px;
+	width: 965px;
+	margin-left: -482.5px;
+	left: 50%;
+	z-index: 999;
+}
+#frameone-titlebanner2 {
+	z-index: 994;
+}
+@media screen and (max-width: 1040px) {
+	#plane {
+		left: 79%;
+	}
+	#bird-3, #bird-1, #balloon-2 {
+		display:none;
+	}
+	#girl {
+		width: 600px;
+		margin-left: -300px;
+	}
+	#frameone-titlebanner1, #frameone-titlebanner2 {
+		width: 750px;
+		margin-left: -375px;
+	}
+}
+@media screen and (max-width: 850px) {
+	#cloud-3, #bird-2 {
+		display: none;
+	}
+	#cloud-4 {
+		left: 70%;
+	}
+	#plane {
+		top: 80px;
+	}
+}
+@media screen and (max-width: 775px) {
+	#girl {
+		width: 400px;
+		margin-left: -200px;
+	}
+	#frameone-titlebanner1, #frameone-titlebanner2 {
+		width: 450px;
+		margin-left: -225px;
+		top: 70px;
+	}
+	#balloon-1, #plane, #cloud-5 {
+		display: none;
+	}
+}
+@media screen and (max-width: 525px) {
+	#cloud-2 {
+		left: 72%;
+	}
+	#cloud-4 {
+		display: none;
+	}
+	#sun {
+		left: 6%;
+	}
+	
+}
