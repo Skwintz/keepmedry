@@ -89,4 +89,21 @@ function redrawDotNav(){
 	} 
 	
 }
+var oritop = 0;
+$(window).scroll(function() {
+    var scrollt = window.scrollY;
+    var elm = $("#girl");
+    var limelm = $(".page-wrapper");
+    var lim = limelm.offset().top + limelm.height();
+    if(oritop < 0) {
+        oritop= elm.offset().top;
+    }
+    if(scrollt >= oritop) {
+        elm.css({"position": "fixed", "top": 20});
+    }
+    if(scrollt + elm.height() > lim) {
+        elm.css({"position": "absolute", "top": 3440});
+    }
+});
+
 
