@@ -1,5 +1,5 @@
-$(document).ready(function() {
-	
+Template.main.rendered = function () {
+
 	redrawDotNav();
 	
 	/* Scroll event handler */
@@ -41,10 +41,8 @@ $(document).ready(function() {
 		});
     	return false;
     });
-    
-});
 
-
+};
 
 /* Scroll the background layers */
 function parallaxScroll(){
