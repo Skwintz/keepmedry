@@ -38,19 +38,19 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f3a736', end
 }
 #primary li a {
 	display: block;
-	background: url(../images/arrows.png) no-repeat bottom left;
+	background: url(/images/arrows.png) no-repeat bottom left;
 	text-indent: -9999em;
 	height: 20px;
 	width: 28px;
 }
 #primary li a:hover, #primary li a.active {
-	background: url(../images/arrows.png) no-repeat top left;
+	background: url(/images/arrows.png) no-repeat top left;
 }
 #primary li a.framefour {
-	background: url(../images/heart.png) no-repeat bottom left;
+	background: url(/images/heart.png) no-repeat bottom left;
 }
 #primary li a.framefour.active {
-	background: url(../images/heart.png) no-repeat top left;
+	background: url(/images/heart.png) no-repeat top left;
 }
 #girl {
 	position: fixed;
