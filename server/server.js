@@ -12,14 +12,15 @@ var Fiber = Meteor.require( 'fibers' );
 
 var carriers = {
 
-	'alltel': '@message.alltel.com',
-	'at&t': '@txt.att.net',
+	'att': '@txt.att.net',
 	'boost': '@myboostmobile.com',
-	'nextel': '@messaging.nextel.com',
 	'sprint': '@messaging.sprintpcs.com',
 	'tmobile': '@tmomail.net',
 	'uscellular': '@email.uscc.net',
-	'verizon': '@vtext.com'
+	'verizon': '@vtext.com',
+	'metropcs': '@mymetropcs.com',
+	'cellularsouth': '@csouth1.com',
+	'ntelos': '@pcs.ntelos.com'
 
 };
 
@@ -124,45 +125,55 @@ Meteor.methods({
 
 	setupTextTimer: function ( user ) {
 
-		var now = Date.now();
-		var then = new Date( user.time );
+		var split = user.time.split(':');
 
-		var hoursDiff = now.getHours() - when.getHours();
-		var minDiff = now.getMinutes() - when.getMinutes();
-		var secDiff = now.getSeconds() - when.getSeconds();
+		var userHours = parseInt( split[0] );
+		var userMinutes = parseInt( split[1] );
 
-		var totalSeconds = ( hoursDiff * 60 * 60 ) + ( minDiff * 60 ) + secDiff ;
+		var now = new Date;
+
+		var hoursDiff = userHours - now.getHours();
+		var minDiff = userMinutes - now.getMinutes();
+
+		if ( hoursDiff < 0 ) { hoursDiff += 24; }
+		if ( minDiff < 0 ) { minDiff += 60; }
+
+		var totalSeconds = ( hoursDiff * 60 * 60 ) + ( minDiff * 60 ) - now.getSeconds();
 
 
 		setTimeout(function () {
 
-			setInterval(function () {
-
+			function send () {
 				console.log('sent!');
+				forecast.get(user.latitude, user.longitude, function (err, res, data) {
 
-				// forecast.get(latitude, longitude, function (err, res, data) {
+					var message = getMessage( data.daily.data[0] );
 
-				// 	var message = getMessage( data.daily.data[0] );
+					Fiber(function () {
 
+						Email.send({
+							to: user.number + carriers[ user.carrier ],
+							from: 'daily@keepmedry.org',
+							subject: 'Keep Me Dry',
+							text: message
+						});
+
+					}).run();
 					
-					
-				// 	Fiber(function () {
+				});
+			}
 
-				// 		Email.send({
-				// 			to: '4023040146@vtext.com',
-				// 			from: 'daily@keepmedry.org',
-				// 			subject: 'Keep Me Dry',
-				// 			text: message
-				// 		});
-
-				// 	}).run();
-					
-				// });
-
-			}, 1000 * 60 ); //* 60 * 24)
+			send();
+			setInterval(send, 1000 * 60 ); //* 60 * 24)
 
 		}, 1000 * totalSeconds );
 
+		Email.send({
+			to: user.number + carriers[ user.carrier ],
+			from: 'daily@keepmedry.org',
+			subject: 'Keep Me Dry',
+			text: 'Thanks for signing up! You\'ll be receiving you\'re first forecast text soon.'
+		});
 
 		// name, time, latitude, longitude
 

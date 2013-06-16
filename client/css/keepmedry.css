@@ -364,7 +364,7 @@ form button {
 }
 form .arrow {
 	float: left; 
-	margin-top: 26px;
+	margin-top: 76px;
 }
 #framefour p.privacy {
 	font-size: 14px;
@@ -374,7 +374,7 @@ form .arrow {
 	clear: both;
 	height: 1px;
 }
-#framefour p.success {
+#framefour p.success, #framefour p.wait {
 	color: #f3a735; 
 	font-size: 54px;
 	padding: 30px 0;
